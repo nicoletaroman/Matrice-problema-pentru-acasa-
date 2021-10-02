@@ -1,0 +1,35 @@
+X=[[1,2,3,4,5],[2,3,4,1,5],[1,1,0,9,2],[2,4,8,0,1],[6,1,2,3,0]]
+print('suma primei linii este',sum(X[0]))
+print('suma primei linii este',sum(X[1]))
+print('suma primei linii este',sum(X[2]))
+print('suma primei linii este',sum(X[3]))
+print('suma primei linii este',sum(X[4]))
+
+c=[]
+d=[]
+l=[]
+k=[]
+p=[]
+for i in X:
+    c.append(i[0])
+    d.append(i[1])
+    l.append(i[2])
+    p.append(i[3])
+    k.append(i[4])
+print('suma primei coloane este ',sum(c))
+print('suma coloanei 2 este ',sum(d))
+print('suma coloanei 3 este ',sum(l))
+print('suma coloanei 4 este ',sum(p))
+print('suma coloanei 5 este ',sum(k))
+g=[]
+for i in range(len(X)):
+    for j in range(len(X[0])):
+        if i==j:
+            g.append(X[i][j])
+print('diag. principala este=',g)
+h=[]
+for i in range(len(X)):
+    for j in range(len(X[0])):
+        if i+j==4:   #n=5 n-1=4
+            h.append(X[i][j])
+print('diag. secundara este=',h)
